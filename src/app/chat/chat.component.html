@@ -1,0 +1,14 @@
+<p>
+  chat works!
+</p>
+<div>
+  <input id="txtFind" type="text">
+  <button id="btnFinf"></button>
+  <div id="msgList" style="height:400; width:300; overflow-y:auto;">
+    <ul id="listM">
+      <li *ngFor="let msgItem of messages">{{msgItem.textMsg}}</li>
+    </ul>
+  </div>
+  <input #txtNewMsg type="text">
+  <button id="btnAddMsg" (click)="AddClick(txtNewMsg.value)">add message</button>
+</div>
